@@ -1,0 +1,12 @@
+console.log(location);
+console.log(location.search);
+let url = new URL(location);
+console.log(url);
+let name = url.searchParams.get('name');
+console.log(name);
+let surname = url.searchParams.get('surname');
+console.log(surname);
+let full = url.searchParams.get('full');
+console.log(full);
+let h1 = document.getElementsByTagName('h1')[0];
+h1.innerText = `Hi, my info is - ${name} ${surname}`;
